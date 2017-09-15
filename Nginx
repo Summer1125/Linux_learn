@@ -1,0 +1,13 @@
+nginx服务
+
+功能：web软件，用来提供web服务，基于http协议传输,基于传输层的TCP协议。
+安装nginx步骤：
+1、yum install epel-release -y
+2、如果在yum.repos.d文件下面没有epel的圆，用yum reinstall repel-release -y命令重新安装，ls后
+	就可以看到epel.repo。
+3、yum install nginx -y来安装。（版本号最后一位是偶数，一般是稳定版本）
+4、写配置文件：vim /etc/nginx/nginx.conf
+	
+	
+URL地址：统一资源定位符http://baidu.com:80，其中域名被DNS转化成IP地址，结合端口号定位到唯一一个软件。
+URI地址:统一资源标识符，http://baidu.com:80/a/b/c.txt可以定位到唯一一个文件c.txt。
