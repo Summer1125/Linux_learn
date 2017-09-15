@@ -1,0 +1,24 @@
+Linux安装软件包的方式
+1、yum 方式安装
+	该方法可以自动解决软件包之间的依赖关系。
+	
+常用命令：
+yum clean all  
+yum makecache
+yum groupinstall '软件包组'
+yum -y install 软件包名
+yum erase 软件包名
+yum remove 软件包名
+
+yum reinstall 软件包名
+yum update
+yum upgrade
+
+源码安装步骤：
+1、yum groupinstall ‘开发工具’ -y
+2、解压安装包
+3、打开安装包
+4、运行./configure文件                    configure的目的是生成makefile文件
+5、make
+6、make install
+在安装过程中经常碰到make后报错，根据提示安装缺少的软件包。
