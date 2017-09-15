@@ -1,0 +1,11 @@
+Linux 内存相关：
+free -m          查看内存信息
+cat /proc/cpuinfo   查看CPU信息
+df  
+top  动态查看内存系统信息
+
+
+进程管理：
+ps aux | grep 进程名
+kill -9 pid
+kill -9 进程名
