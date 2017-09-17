@@ -1,0 +1,11 @@
+ssh 服务
+
+ssh ip地址      链接到该ip地址
+systemctl status sshd    查看ssh 是否开启和端口号
+
+scp  不同服务器之间拷贝文件。e.g.:  scp /a/b/c.txt   cxq@192.168.1.136:/home/cxq
+
+每次拷贝都要输密码，比价麻烦，解决方式：
+	ssh -kengen  一路回车
+	#ls   /root/.ssh/
+	ssh -copy-id -i 192.168.1.102   将钥匙拷贝到后面的IP地址下
