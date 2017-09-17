@@ -1,0 +1,17 @@
+网络配置相关
+
+
+给网卡修改ip地址：
+ifconfig 网卡名 ip地址  子网掩码
+
+配置DNS：在/etc/
+
+配置网关：route add default gw 网关地址 netmask 掩码
+		用route -n来查看
+
+删除网关：route del default gw 网关地址 netmask 掩码
+
+机器自己制定解析规则：在/etc/hosts文件里面改
+
+查看主机名：hostname 
+修改主机名：hostnamectl  set-hostname  主机名
