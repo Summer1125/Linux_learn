@@ -63,7 +63,10 @@ awk 文本编辑器
 补充：sort 排序
     unique 去重
     cat aa.txt | sort | unique给aa.txt文件排序并去除重　
-
+    du -sh 目录：统计该目录下文件的大小
+    find / -name "*.txt"寻找根目录下所有txt结尾的文件
+    find / -size +30M 寻找根目录下大于30M的文件
+    grep -rl
 
 
 
