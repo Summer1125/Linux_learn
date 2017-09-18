@@ -11,3 +11,31 @@ nginx服务
 	
 URL地址：统一资源定位符http://baidu.com:80，其中域名被DNS转化成IP地址，结合端口号定位到唯一一个软件。
 URI地址:统一资源标识符，http://baidu.com:80/a/b/c.txt可以定位到唯一一个文件c.txt。
+
+
+
+systemctl stop firewall 关闭防火墙
+systemctl disable firewall 开机不启动防火墙
+systectl enable firewall 开机启动防火墙
+systemctl start nginx 开启nginx
+systemctl stop nginx 关闭Nginx
+
+
+nginx测试：
+首先,关闭防火墙systemctl stop firewall
+确保系统安装了epel圆，没安装的话用yum install epel-release -y安装
+安装nginx：yum install nginx -y
+
+vim /etc/nginx/nginx.conf配置文件下查看根目录
+	root /usr/share/nginx/html是默认
+重启niginx:systectl restart nginx
+
+
+如果需要重启服务器，用systemctl reload nginx 来重新加载配置文件，就不会因为重启使服务器崩溃。
+
+
+404表示访问不到，403表示客户端没有权限
+
+
+
+正向代理与反向代理
