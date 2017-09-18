@@ -60,6 +60,17 @@ sed编辑器
 
 awk 文本编辑器
 读取IP地址：ifconfig | awk 'NR==2{print $2}'
+补充：sort 排序
+    unique 去重
+    cat aa.txt | sort | unique给aa.txt文件排序并去除重　
+
+
+
+
+
+
+
+
 
 下面是sed正则表达式练习和答案
 Sed作业：以/etc/passwd文件为模板
