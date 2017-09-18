@@ -56,10 +56,12 @@ sed编辑器
 -i	表示直接修改文件
 -f
 -r	扩展正则
+
+
+awk 文本编辑器
+读取IP地址：ifconfig | awk 'NR==2{print $2}'
+
 下面是sed正则表达式练习和答案
-
-
-
 Sed作业：以/etc/passwd文件为模板
 
 1，删除文件每行的第一个字符。
